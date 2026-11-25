@@ -1,0 +1,22 @@
+# Data: raw and processed CSVs are too large for git (see data/README.md)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/
+*.csv
+!data/sample/*.csv
+!results/*.csv
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*.xlsx
