@@ -99,19 +99,18 @@ The full tables are written to [`results/`](results/) by the notebooks
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-# put IoTPond1.csv ... IoTPond12.csv into data/raw/ (see data/README.md)
 jupyter lab                       # run notebooks/01 ... 06 in order
 ```
 
-`data/sample/IoTPond10.csv` (620 rows) is included for a quick look.
+The 11 raw pond CSVs are included in `data/raw/` (about 96 MB), so the notebooks run straight after cloning.
+See [`data/README.md`](data/README.md) for the source and citation.
 
 ## Repository layout
 
 ```
 ├── data/
 │   ├── README.md          # source, licence, known data quirks
-│   ├── sample/            # one small pond, committed
-│   ├── raw/               # original CSVs (not committed)
+│   ├── raw/               # the 11 original pond CSVs
 │   └── processed/         # created by notebook 03 (not committed)
 ├── notebooks/             # 01–06, run in order
 ├── results/               # tables written by the notebooks
